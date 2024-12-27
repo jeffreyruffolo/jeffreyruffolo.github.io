@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://jeffreyruffolo.github.ioblank/sitemap.xml
+User-agent: * Disallow: Sitemap: https://jeffreyruffolo.github.io/sitemap.xml
