@@ -38,7 +38,10 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "news-we-have-released-a-highly-functional-genome-editor-for-free-and-ethical-use-as-part-of-profluent-s-opencrispr-project-check-out-the-preprint-for-more-details",
+    },{id: "news-i-graduated-from-johns-hopkins-university-with-a-phd-in-molecular-biophysics-read-more-about-my-work-focusing-on-antibody-structure-prediction-and-design-in-my-thesis-here",
+          title: 'I graduated from Johns Hopkins University with a PhD in molecular biophysics. Read...',
+          description: "",
+          section: "News",},{id: "news-we-have-released-a-highly-functional-genome-editor-for-free-and-ethical-use-as-part-of-profluent-s-opencrispr-project-check-out-the-preprint-for-more-details",
           title: 'We have released a highly functional genome editor for free and ethical use...',
           description: "",
           section: "News",},{id: "news-our-preprint-on-proselm-a-model-for-protein-sequence-generation-conditioned-on-atomistic-structural-and-functional-context-is-now-available-on-biorxiv-check-it-out-here",
@@ -67,6 +70,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://bsky.app/profile/jeffruffolo.bsky.social", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/jeffreyruffolo", "_blank");
         },
       },{
         id: 'social-github',
