@@ -1,115 +1,429 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{yang2024conditional,
+  title       = {Conditional enzyme generation using protein language models with adapters},
+  author      = {Yang, Jason and Bhatnagar, Aadyot and Ruffolo, Jeffrey A. and Madani, Ali},
+  journal     = {arXiv},
+  year        = {2024},
+  abstract    = {
+                 The conditional generation of proteins with desired functions and/or properties is a key goal for generative models. Existing methods based 
+                 on prompting of language models can generate proteins conditioned on a target functionality, such as a desired enzyme family. However, these 
+                 methods are limited to simple, tokenized conditioning and have not been shown to generalize to unseen functions. In this study, we propose 
+                 ProCALM (Protein Conditionally Adapted Language Model), an approach for the conditional generation of proteins using adapters to protein 
+                 language models. Our specific implementation of ProCALM involves finetuning ProGen2 to incorporate conditioning representations of enzyme 
+                 function and taxonomy. ProCALM matches existing methods at conditionally generating sequences from target enzyme families. Impressively, it 
+                 can also generate within the joint distribution of enzymatic function and taxonomy, and it can generalize to rare and unseen enzyme families 
+                 and taxonomies. Overall, ProCALM is a flexible and computationally efficient approach, and we expect that it can be extended to a wide range 
+                 of generative language models.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Profluent-Internships/ProCALM}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{ruffolo2024adapting,
+  title       = {Adapting protein language models for structure-conditioned design},
+  author      = {Ruffolo, Jeffrey A. and Bhatnagar, Aadyot and Beazer, Joel and Nayfach, Stephen and Russ, Jordan and Hill, Emily and Hussain, Riffat and Gallagher, Joseph and Madani, Ali},
+  journal     = {bioRxiv},
+  year        = {2024},
+  selected    = {true},
+  abstract    = {
+                 Generative models for protein design trained on experimentally determined structures have proven useful for a variety of design tasks. 
+                 However, such methods are limited by the quantity and diversity of structures used for training, which represent a small, biased fraction 
+                 of protein space. Here, we describe proseLM, a method for protein sequence design based on adaptation of protein language models to 
+                 incorporate structural and functional context. We show that proseLM benefits from the scaling trends of underlying language models, and 
+                 that the addition of non-protein context – nucleic acids, ligands, and ions – improves recovery of native residues during design by 4-5% 
+                 across model scales. These improvements are most pronounced for residues that directly interface with non-protein context, which are 
+                 faithfully recovered at rates >70% by the most capable proseLM models. We experimentally validated proseLM by optimizing the editing 
+                 efficiency of genome editors in human cells, achieving a 50% increase in base editing activity, and by redesigning therapeutic antibodies, 
+                 resulting in a PD-1 binder with 2.2 nM affinity.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Profluent-AI/proseLM-public}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{ruffolo2024design,
+  title       = {Design of highly functional genome editors by modeling the universe of CRISPR-Cas sequences},
+  author      = {Ruffolo*, Jeffrey A. and Nayfach*, Stephen and Gallagher*, Joseph and Bhatnagar*, Aadyot and Beazer, Joel and Hussain, Riffat and Russ, Jordan and Yip, Jennifer and Hill, Emily and Pacesa, Martin and Meeske, Alexander J. and Cameron, Peter and Madani, Ali},
+  journal     = {bioRxiv},
+  year        = {2024},
+  selected    = {true},
+  abstract    = {
+                 Gene editing has the potential to solve fundamental challenges in agriculture, biotechnology, and human health. CRISPR-based gene 
+                 editors derived from microbes, while powerful, often show significant functional tradeoffs when ported into non-native environments, 
+                 such as human cells. Artificial intelligence (AI) enabled design provides a powerful alternative with potential to bypass evolutionary 
+                 constraints and generate editors with optimal properties. Here, using large language models (LLMs) trained on biological diversity at 
+                 scale, we demonstrate the first successful precision editing of the human genome with a programmable gene editor designed with AI. To 
+                 achieve this goal, we curated a dataset of over one million CRISPR operons through systematic mining of 26 terabases of assembled genomes 
+                 and meta-genomes. We demonstrate the capacity of our models by generating 4.8x the number of protein clusters across CRISPR-Cas families 
+                 found in nature and tailoring single-guide RNA sequences for Cas9-like effector proteins. Several of the generated gene editors show 
+                 comparable or improved activity and specificity relative to SpCas9, the prototypical gene editing effector, while being 400 mutations 
+                 away in sequence. Finally, we demonstrate an AI-generated gene editor, denoted as OpenCRISPR-1, exhibits compatibility with base editing. 
+                 We release OpenCRISPR-1 publicly to facilitate broad, ethical usage across research and commercial applications.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/profluent-ai/opencrispr}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@article{ruffolo2024designing,
+  title       = {Designing proteins with language models},
+  author      = {Ruffolo, Jeffrey A. and Madani, Ali},
+  journal     = {Nature Biotechnology},
+  year        = {2024},
+  selected    = {true},
+  abstract    = {
+                 Protein language models learn from diverse sequences spanning the evolutionary tree and have proven to be powerful tools 
+                 for sequence design, variant effect prediction and structure prediction. What are the foundations of protein language models, 
+                 and how are they applied in protein engineering?
+                 },
+  bibtex_show = {true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{hutchinson2023enhancement,
+  title       = {Toward enhancement of antibody thermostability and affinity by computational design in the absence of antigen},
+  author      = {Hutchinson*, Mark and Ruffolo*, Jeffrey A. and Haskins, Nantaporn and Iannotti, Michael and Vozza, Giuliana and Pham, Tony and Mehzabeen, Nurjahan and Shandilya, Harini and Rickert, Keith and Croasdale-Wood, Rebecca and Damschroder, Melissa and Fu, Ying and Dippel, Andrew and Gray, Jeffrey J. and Kaplan, Gilad},
+  journal     = {bioRxiv},
+  year        = {2023},
+  abstract    = {
+                 Over the past two decades, therapeutic antibodies have emerged as a rapidly expanding domain within the field of biologics. 
+                 In silico tools that can streamline the process of antibody discovery and optimization are critical to support a pipeline that 
+                 is growing more numerous and complex every year. High-quality structural information remains critical for the antibody optimization 
+                 process, but antibody-antigen complex structures are often unavailable and in silico antibody docking methods are still unreliable. 
+                 In this study, DeepAb, a deep learning model for predicting antibody Fv structure directly from sequence, was used in conjunction with 
+                 single-point experimental deep mutational scanning (DMS) enrichment data to design 200 potentially optimized variants of an anti-hen 
+                 egg lysozyme (HEL) antibody. We sought to determine whether DeepAb-designed variants containing combinations of beneficial mutations 
+                 from the DMS exhibit enhanced thermostability and whether this optimization affected their developability profile. The 200 variants 
+                 were produced through a robust high-throughput method and tested for thermal and colloidal stability (Tonset, Tm, Tagg), affinity 
+                 (KD) relative to the parental antibody, and for developability parameters (nonspecific binding, aggregation propensity, self-association). 
+                 Of the designed clones, 91% and 94% exhibited increased thermal and colloidal stability and affinity, respectively. Of these, 10% showed 
+                 a significantly increased affinity for HEL (5- to 21-fold increase) and thermostability (>2.5C increase in Tm1), with most clones 
+                 retaining the favorable developability profile of the parental antibody. Additional in silico tests suggest that these methods would 
+                 enrich for binding affinity even without first collecting experimental DMS measurements. These data open the possibility of in silico 
+                 antibody optimization without the need to predict the antibody-antigen interface, which is notoriously difficult in the absence of 
+                 crystal structures.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/DeepAb}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{morehead2023towards,
+  title       = {Towards Joint Sequence-Structure Generation of Nucleic Acid and Protein Complexes with SE(3)-Discrete Diffusion},
+  author      = {Morehead, Alex and Ruffolo, Jeffrey A. and Bhatnagar, Aadyot and Madani, Ali},
+  journal     = {Arxiv},
+  year        = {2023},
+  abstract    = {
+                 Generative models of macromolecules carry abundant and impactful implications for industrial and biomedical efforts in protein 
+                 engineering. However, existing methods are currently limited to modeling protein structures or sequences, independently or jointly, 
+                 without regard to the interactions that commonly occur between proteins and other macromolecules. In this work, we introduce 
+                 MMDiff, a generative model that jointly designs sequences and structures of nucleic acid and protein complexes, independently or 
+                 in complex, using joint SE(3)-discrete diffusion noise. Such a model has important implications for emerging areas of macromolecular 
+                 design including structure-based transcription factor design and design of noncoding RNA sequences. We demonstrate the utility 
+                 of MMDiff through a rigorous new design benchmark for macromolecular complex generation that we introduce in this work. Our results 
+                 demonstrate that MMDiff is able to successfully generate micro-RNA and single-stranded DNA molecules while being modestly capable of 
+                 joint modeling DNA and RNA molecules in interaction with multi-chain protein complexes.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Profluent-Internships/MMDiff}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{chungyoun2023flab,
+  title       = {FLAb: Benchmarking deep learning methods for antibody fitness prediction},
+  author      = {Chungyoun, Michael F. and Ruffolo, Jeffrey A. and Gray, Jeffrey J.},
+  journal     = {bioRxiv},
+  year        = {2023},
+  abstract    = {
+                 The successful application of machine learning in therapeutic antibody design relies heavily on the ability of models to accurately 
+                 represent the sequence-structure-function landscape, also known as the fitness landscape. Previous protein bench-marks (including The 
+                 Critical Assessment of Function Annotation [33], Tasks Assessing Protein Embeddings [23], and FLIP [6]) examine fitness and mutational 
+                 landscapes across many protein families, but they either exclude antibody data or use very little of it. In light of this, we present the 
+                 Fitness Landscape for Antibodies (FLAb), the largest therapeutic antibody design benchmark to date. FLAb currently encompasses six properties 
+                 of therapeutic antibodies: (1) expression, (2) thermosta-bility, (3) immunogenicity, (4) aggregation, (5) polyreactivity, and (6) binding 
+                 affinity. We use FLAb to assess the performance of various widely adopted, pretrained, deep learning models for proteins (IgLM, AntiBERTy, 
+                 ProtGPT2, ProGen2, ProteinMPNN, and ESM-IF); and compare them to physics-based Rosetta. Overall, no models 
+                 are able to correlate with all properties or across multiple datasets of similar properties, indicating that more work is needed in prediction 
+                 of antibody fitness. Additionally, we elucidate how wild type origin, deep learning architecture, training data composition, parameter size, 
+                 and evolutionary signal affect performance, and we identify which fitness landscapes are more readily captured by each protein model. To 
+                 promote an expansion on therapeutic antibody design benchmarking, all FLAb data are freely accessible and open for additional contribution 
+                 at https://github.com/Graylab/FLAb.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/FLAb}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{nijkamp2023progen2,
+  title       = {ProGen2: Exploring the Boundaries of Protein Language Models},
+  author      = {Nijkamp*, Erik and Ruffolo*, Jeffrey A. and Weinstein, Eli N. and Naik, Nikhil and Madani, Ali},
+  journal     = {Cell Systems},
+  year        = {2023},
+  abstract    = {
+                 Attention-based models trained on protein sequences have demonstrated incredible success at classification and generation tasks 
+                 relevant for artificial-intelligence-driven protein design. However, we lack a sufficient understanding of how very large-scale 
+                 models and data play a role in effective protein model development. We introduce a suite of protein language models, named ProGen2, 
+                 that are scaled up to 6.4B parameters and trained on different sequence datasets drawn from over a billion proteins from genomic, 
+                 metagenomic, and immune repertoire databases. ProGen2 models show state-of-the-art performance in capturing the distribution of 
+                 observed evolutionary sequences, generating novel viable sequences, and predicting protein fitness without additional fine-tuning. 
+                 As large model sizes and raw numbers of protein sequences continue to become more widely accessible, our results suggest that 
+                 a growing emphasis needs to be placed on the data distribution provided to a protein sequence model. Our models and code are open 
+                 sourced for widespread adoption in protein engineering.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/salesforce/progen}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{shuai2023iglm,
+  title       = {IgLM: infilling language modeling for antibody sequence design},
+  author      = {Shuai*, Richard W. and Ruffolo*, Jeffrey A. and Gray, Jeffrey J.},
+  journal     = {Cell Systems},
+  year        = {2023},
+  abstract    = {
+                 Discovery and optimization of monoclonal antibodies for therapeutic applications relies on large sequence libraries but is 
+                 hindered by developability issues such as low solubility, high aggregation, and high immunogenicity. Generative language models, 
+                 trained on millions of protein sequences, are a powerful tool for the on-demand generation of realistic, diverse sequences. We 
+                 present the Immunoglobulin Language Model (IgLM), a deep generative language model for creating synthetic antibody libraries. 
+                 Compared with prior methods that leverage unidirectional context for sequence generation, IgLM formulates antibody design based 
+                 on text-infilling in natural language, allowing it to re-design variable-length spans within antibody sequences using bidirectional 
+                 context. We trained IgLM on 558 million (M) antibody heavy- and light-chain variable sequences, conditioning on each sequence's 
+                 chain type and species of origin. We demonstrate that IgLM can generate full-length antibody sequences from a variety of species 
+                 and its infilling formulation allows it to generate infilled complementarity-determining region (CDR) loop libraries with improved 
+                 in silico developability profiles.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/IgLM}
+}
+
+@article{mahajan2023contextual,
+  title       = {Contextual protein and antibody encodings from equivariant graph transformers},
+  author      = {Mahajan, Sai Pooja and Ruffolo, Jeffrey A. and Gray, Jeffrey J.},
+  journal     = {bioRxiv},
+  year        = {2023},
+  bibtex_show = {true}
+}
+
+@article{chu2024flexible,
+  title       = {Flexible protein--protein docking with a multitrack iterative transformer},
+  author      = {Chu, Lee-Shin and Ruffolo, Jeffrey A. and Harmalkar, Ameya and Gray, Jeffrey J.},
+  journal     = {Protein Science},
+  year        = {2024},
+  abstract    = {
+                 Conventional protein-protein docking algorithms usually rely on heavy candidate sampling and reranking, but these steps are time-consuming 
+                 and hinder applications that require high-throughput complex structure prediction, for example, structure-based virtual screening. Existing 
+                 deep learning methods for protein-protein docking, despite being much faster, suffer from low docking success rates. In addition, they 
+                 simplify the problem to assume no conformational changes within any protein upon binding (rigid docking). This assumption precludes applications 
+                 when binding-induced conformational changes play a role, such as allosteric inhibition or docking from uncertain unbound model structures. 
+                 To address these limitations, we present GeoDock, a multitrack iterative transformer network to predict a docked structure from separate 
+                 docking partners. Unlike deep learning models for protein structure prediction that input multiple sequence alignments, GeoDock inputs 
+                 just the sequences and structures of the docking partners, which suits the tasks when the individual structures are given. GeoDock is 
+                 flexible at the protein residue level, allowing the prediction of conformational changes upon binding. On the Database of Interacting 
+                 Protein Structures (DIPS) test set, GeoDock achieves a 43% top-1 success rate, outperforming all other tested methods. However, in the 
+                 standard DIPS train/test splits, we discovered contamination of close homologs in the training set. After decontaminating the training set, 
+                 the success rate is 31%. On the DB5.5 test set and a benchmark dataset of antibody-antigen complexes, GeoDock outperforms the deep 
+                 learning models trained using the same dataset but falls behind most of the conventional methods and AlphaFold-Multimer. GeoDock attains 
+                 an average inference speed of under 1 s on a single GPU, enabling its application in large-scale structure screening. Although binding-induced 
+                 conformational changes are still a challenge owing to limited training and evaluation data, our architecture sets up the foundation to 
+                 capture this backbone flexibility. Code and a demonstration Jupyter notebook are available at https://github.com/Graylab/GeoDock.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/GeoDock}
+}
+
+@article{ludwig2022versatile,
+  title       = {A versatile design platform for glycoengineering therapeutic antibodies},
+  author      = {Ludwig, Seth D. and Bernstein, Zachart J. and Agatemor, Christian and Dammen-Brower, Kris and Ruffolo, Jeffrey and Rosas, Jonah M. and Post, Jeremey D. and Cole, Robert N. and Yarema, Kevin J. and Spangler, Jamie B.},
+  journal     = {mAbs},
+  year        = {2022},
+  abstract    = {
+                 Manipulation of glycosylation patterns, i.e., glycoengineering, is incorporated in the therapeutic antibody development workflow to ensure 
+                 clinical safety, and this approach has also been used to modulate the biological activities, functions, or pharmacological properties of 
+                 antibody drugs. Whereas most existing glycoengineering strategies focus on the canonical glycans found in the constant domain of 
+                 immunoglobulin G (IgG) antibodies, we report a new strategy to leverage the untapped potential of atypical glycosylation patterns in 
+                 the variable domains, which naturally occur in 15% to 25% of IgG antibodies. Glycosylation sites were added to the antigen-binding 
+                 regions of two functionally divergent, interleukin-2-binding monoclonal antibodies. We used computational tools to rationally install 
+                 various N-glycosylation consensus sequences into the antibody variable domains, creating “glycovariants” of these molecules. Strikingly, 
+                 almost all the glycovariants were successfully glycosylated at their newly installed N-glycan sites, without reduction of the antibody's 
+                 native function. Importantly, certain glycovariants exhibited modified activities compared to the parent antibody, showing the potential of 
+                 our glycoengineering strategy to modulate biological function of antibodies involved in multi-component receptor systems. Finally, 
+                 when coupled with a high-flux sialic acid precursor, a glycovariant with two installed glycosylation sites demonstrated superior in vivo 
+                 half-life. Collectively, these findings validate a versatile glycoengineering strategy that introduces atypical glycosylation into therapeutic 
+                 antibodies in order to improve their efficacy and, in certain instances, modulate their activity early in the drug development process.
+                 },
+  bibtex_show = {true}
+}
+
+@article{mahajan2022hallucinating,
+  title       = {Hallucinating structure-conditioned antibody libraries for target-specific binders},
+  author      = {Mahajan, Sai Pooja and Ruffolo, Jeffrey A. and Frick, Rahel and Gray, Jeffrey J.},
+  journal     = {Frontiers in Immunology},
+  year        = {2022},
+  abstract    = {
+                 Antibodies are widely developed and used as therapeutics to treat cancer, infectious disease, and inflammation. During development, 
+                 initial leads routinely undergo additional engineering to increase their target affinity. Experimental methods for affinity maturation are 
+                 expensive, laborious, and time-consuming and rarely allow the efficient exploration of the relevant design space. Deep learning (DL) models 
+                 are transforming the field of protein engineering and design. While several DL-based protein design methods have shown promise, the antibody 
+                 design problem is distinct, and specialized models for antibody design are desirable. Inspired by hallucination frameworks that leverage 
+                 accurate structure prediction DL models, we propose the FvHallucinator for designing antibody sequences, especially the CDR loops, conditioned 
+                 on an antibody structure. Such a strategy generates targeted CDR libraries that retain the conformation of the binder and thereby the mode 
+                 of binding to the epitope on the antigen. On a benchmark set of 60 antibodies, FvHallucinator generates sequences resembling natural CDRs 
+                 and recapitulates perplexity of canonical CDR clusters. Furthermore, the FvHallucinator designs amino acid substitutions at the VH-VL interface 
+                 that are enriched in human antibody repertoires and therapeutic antibodies. We propose a pipeline that screens FvHallucinator designs to obtain 
+                 a library enriched in binders for an antigen of interest. We apply this pipeline to the CDR H3 of the Trastuzumab-HER2 complex to generate 
+                 in silico designs predicted to improve upon the binding affinity and interfacial properties of the original antibody. Thus, the FvHallucinator 
+                 pipeline enables generation of inexpensive, diverse, and targeted antibody libraries enriched in binders for antibody affinity maturation.
+                 },
+  bibtex_show = {true}
+}
+
+@article{ruffolo2023fast,
+  title       = {Fast, accurate antibody structure from deep learning on massive set of natural antibodies},
+  author      = {Ruffolo, Jeffrey A. and Chu, Lee-Shin and Mahajan, Sai Pooja and Gray, Jeffrey J.},
+  journal     = {Nature Communications},
+  year        = {2023},
+  abstract    = {
+                 Antibodies have the capacity to bind a diverse set of antigens, and they have become critical therapeutics and diagnostic molecules. 
+                 The binding of antibodies is facilitated by a set of six hypervariable loops that are diversified through genetic recombination and 
+                 mutation. Even with recent advances, accurate structural prediction of these loops remains a challenge. Here, we present IgFold, a 
+                 fast deep learning method for antibody structure prediction. IgFold consists of a pre-trained language model trained on 558 million 
+                 natural antibody sequences followed by graph networks that directly predict backbone atom coordinates. IgFold predicts structures of 
+                 similar or better quality than alternative methods (including AlphaFold) in significantly less time (under 25s). Accurate structure 
+                 prediction on this timescale makes possible avenues of investigation that were previously infeasible. As a demonstration of IgFold's 
+                 capabilities, we predicted structures for 1.4 million paired antibody sequences, providing structural insights to 500-fold more antibodies 
+                 than have experimentally determined structures.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/IgFold}
+}
+
+@article{ruffolo2021deciphering,
+  title       = {Deciphering antibody affinity maturation with language models and weakly supervised learning},
+  author      = {Ruffolo, Jeffrey A. and Gray, Jeffrey J. and Sulam, Jeremias},
+  journal     = {arXiv},
+  year        = {2021},
+  abstract    = {
+                 In response to pathogens, the adaptive immune system generates specific antibodies that bind and neutralize foreign antigens. 
+                 Understanding the composition of an individual's immune repertoire can provide insights into this process and reveal potential 
+                 therapeutic antibodies. In this work, we explore the application of antibody-specific language models to aid understanding of 
+                 immune repertoires. We introduce AntiBERTy, a language model trained on 558M natural antibody sequences. We find that within 
+                 repertoires, our model clusters antibodies into trajectories resembling affinity maturation. Importantly, we show that models 
+                 trained to predict highly redundant sequences under a multiple instance learning framework identify key binding residues in the 
+                 process. With further development, the methods presented here will provide new insights into antigen binding from repertoire sequences alone.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/jeffreyruffolo/AntiBERTy}
+}
+
+@article{akpinaroglu2022improved,
+  title       = {Simultaneous prediction of antibody backbone and side-chain conformations with deep learning},
+  author      = {Akpinaroglu, Deniz and Ruffolo, Jeffrey A. and Mahajan, Sai Pooja and Gray, Jeffrey J.},
+  journal     = {PLOS One},
+  year        = {2022},
+  abstract    = {
+                 Antibody engineering is becoming increasingly popular in medicine for the development of diagnostics and immunotherapies. 
+                 Antibody function relies largely on the recognition and binding of antigenic epitopes via the loops in the complementarity 
+                 determining regions. Hence, accurate high-resolution modeling of these loops is essential for effective antibody engineering 
+                 and design. Deep learning methods have previously been shown to effectively predict antibody backbone structures described as a 
+                 set of inter-residue distances and orientations. However, antigen binding is also dependent on the specific conformations of 
+                 surface side-chains. To address this shortcoming, we created DeepSCAb: a deep learning method that predicts inter-residue geometries 
+                 as well as side-chain dihedrals of the antibody variable fragment. The network requires only sequence as input, rendering it 
+                 particularly useful for antibodies without any known backbone conformations. Rotamer predictions use an interpretable self-attention 
+                 layer, which learns to identify structurally conserved anchor positions across several species. We evaluate the performance of the 
+                 model for discriminating near-native structures from sets of decoys and find that DeepSCAb outperforms similar methods lacking 
+                 side-chain context. When compared to alternative rotamer repacking methods, which require an input backbone structure, DeepSCAb 
+                 predicts side-chain conformations competitively. Our findings suggest that DeepSCAb improves antibody structure prediction with 
+                 accurate side-chain modeling and is adaptable to applications in docking of antibody-antigen complexes and design of new therapeutic 
+                 antibody sequences.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/DeepSCAb}
+}
+
+@article{ruffolo2022antibody,
+  title       = {Antibody structure prediction using interpretable deep learning},
+  author      = {Ruffolo, Jeffrey A. and Sulam, Jeremias and Gray, Jeffrey J.},
+  journal     = {Patterns},
+  year        = {2022},
+  abstract    = {
+                 Therapeutic antibodies make up a rapidly growing segment of the biologics market. However, rational design
+                 of antibodies is hindered by reliance on experimental methods for determining antibody structures. Here, we
+                 present DeepAb, a deep learning method for predicting accurate antibody FV structures from sequence. We
+                 evaluate DeepAb on a set of structurally diverse, therapeutically relevant antibodies and find that our method
+                 consistently outperforms the leading alternatives. Previous deep learning methods have operated as "black
+                 boxes" and offered few insights into their predictions. By introducing a directly interpretable attention mechanism, 
+                 we show our network attends to physically important residue pairs (e.g., proximal aromatics and key
+                 hydrogen bonding interactions). Finally, we present a novel mutant scoring metric derived from network confidence 
+                 and show that for a particular antibody, all eight of the top-ranked mutations improve binding affinity.
+                 This model will be useful for a broad range of antibody prediction and design tasks.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/RosettaCommons/DeepAb}
+}
+
+@article{ruffolo2020modeling,
+  title       = {Modeling of lamprey reticulospinal neurons: multiple distinct parameter sets yield realistic simulations},
+  author      = {Ruffolo, Jeffrey A. and McClellan, Andrew D.},
+  journal     = {Journal of Neurophysiology},
+  year        = {2020},
+  abstract    = {
+                 For the lamprey and other vertebrates, reticulospinal (RS) neurons project descending axons to the spinal cord and activate 
+                 motor networks to initiate locomotion and other behaviors. In the present study, a biophysically detailed computer model of 
+                 lamprey RS neurons was constructed consisting of three compartments: dendritic, somatic, and axon initial segment (AIS). All 
+                 compartments included passive channels. In addition, the soma and AIS had fast potassium and sodium channels. The soma included 
+                 three additional voltage-gated ion channels (slow sodium and high- and low-voltage-activated calcium) and calcium-activated 
+                 potassium channels. An initial manually adjusted default parameter set, which was based, in part, on modified parameters from 
+                 models of lamprey spinal neurons, generated simulations of single action potentials and repetitive firing that scored favorably 
+                 (0.658; maximum = 0.964) compared with experimentally derived properties of lamprey RS neurons. Subsequently, a dual-annealing 
+                 search paradigm identified 4,302 viable parameter sets at local maxima within parameter space that yielded higher scores than 
+                 the default parameter set, including many with much higher scores of approximately 0.85-0.87 (i.e., ~30% improvement). In addition, 
+                 5- and 2-conductance grid searches identified a relatively large number of viable parameters sets for which significant correlations 
+                 were present between maximum conductances for pairs of ion channels. The present results indicated that multiple model parameter sets 
+                 (“solutions”) generated action potentials and repetitive firing that mimicked many of the properties of lamprey RS neurons. To our 
+                 knowledge, this is the first study to systematically explore parameter space for a biophysically detailed model of lamprey RS neurons.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/jeffreyruffolo/lamprey_rs_neuron_parameter_exploration}
+}
+
+@article{ruffolo2020geometric,
+  title       = {Geometric potentials from deep learning improve prediction of CDR H3 loop structures},
+  author      = {Ruffolo, Jeffrey A. and Guerra, Carlos and Mahajan, Sai Pooja and Sulam, Jeremias and Gray, Jeffrey J.},
+  journal     = {Bioinformatics},
+  year        = {2020},
+  abstract    = {
+                 Antibody structure is largely conserved, except for a complementarity-determining region featuring six
+                 variable loops. Five of these loops adopt canonical folds which can typically be predicted with existing methods,
+                 while the remaining loop (CDR H3) remains a challenge due to its highly diverse set of observed conformations. In
+                 recent years, deep neural networks have proven to be effective at capturing the complex patterns of protein structure. 
+                 This work proposes DeepH3, a deep residual neural network that learns to predict inter-residue distances and
+                 orientations from antibody heavy and light chain sequence. The output of DeepH3 is a set of probability distributions
+                 over distances and orientation angles between pairs of residues. These distributions are converted to geometric
+                 potentials and used to discriminate between decoy structures produced by RosettaAntibody and predict new CDR
+                 H3 loop structures de novo. When evaluated on the Rosetta antibody benchmark dataset of 49 targets, DeepH3-predicted potentials
+                 identified better, same and worse structures [measured by root-mean-squared distance (RMSD) from the experimental CDR H3 loop 
+                 structure] than the standard Rosetta energy function for 33, 6 and 10 targets, respectively, and
+                 improved the average RMSD of predictions by 32.1% (1.4 Å). Analysis of individual geometric potentials revealed
+                 that inter-residue orientations were more effective than inter-residue distances for discriminating near-native CDR
+                 H3 loops. When applied to de novo prediction of CDR H3 loop structures, DeepH3 achieves an average RMSD of
+                 2.2 ± 1.1 Å on the Rosetta antibody benchmark.
+                 },
+  bibtex_show = {true},
+  code        = {https://github.com/Graylab/deepH3-distances-orientations}
+}
+
+@article{ruffolo2019mufold,
+  title       = {MUFold-Contact and TPCref: New Methods for Protein Structure Contact Prediction and Refinement},
+  author      = {Ruffolo, Jeffrey A. and Li, Zhaoyu and Shang, Yi},
+  journal     = {IEEE International Conference on Bioinformatics and Biomedicine},
+  year        = {2019},
+  abstract    = {
+                 When predicting proteins' 3-D structures from their primary sequences, many existing tools use predicted residue contact 
+                 information, i.e. which residues are in contact with each other. In this paper, we propose two new methods: MUFold-Contact, 
+                 a new two-stage multi-branch deep neural network for predicting structure contact from protein sequences, and TPCref for 
+                 refining the result of a contact prediction tool using template information. MUFold-Contact uses four independently-trained 
+                 deep neural networks to predict residue-residue distances in various ranges, followed by one deep neural network to predict 
+                 residue contact. TPCref is a novel approach to use protein templates to refine contact prediction generated by a particular 
+                 contact prediction method.  It first finds multiple template sequences based on the target sequence, and use the templates' 
+                 structures and the templates' predicted contact map generated by the contact-prediction method to form a target contact-map 
+                 filter, which is then used to refine the predicted contact map of the target sequence. Experimental results using recently 
+                 released PDB proteins show that the performance of MUFold-Contact was comparable with those of the state-of-the-art methods, 
+                 while TPCref significantly improved the contact prediction results of existing methods.
+                 },
+  bibtex_show = {true}
 }
