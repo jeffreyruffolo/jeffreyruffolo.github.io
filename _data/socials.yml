@@ -5,6 +5,7 @@
 scholar_userid: YOOIYogAAAAJ # your Google Scholar ID
 x_username: jeffruffolo # your X handle
 bluesky_url: https://bsky.app/profile/jeffruffolo.bsky.social # your bluesky URL
+linkedin_username: jeffreyruffolo # your LinkedIn user name
 github_username: jeffreyruffolo # your GitHub user name
 orcid_id: 0000-0002-3385-9191 # your ORCID ID
 
@@ -24,7 +25,6 @@ orcid_id: 0000-0002-3385-9191 # your ORCID ID
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # osf_id: # your OSF ID
