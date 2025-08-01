@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper describing OpenCRISPR-1, a highly functional genome editor for free and ethical, is <a href="https://www.nature.com/articles/s41586-025-09298-z">published in Nature</a>.
+Our paper describing the design of OpenCRISPR-1, a highly functional genome editor released for free and ethical use, is <a href="https://www.nature.com/articles/s41586-025-09298-z">published in Nature</a>.
